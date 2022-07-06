@@ -13,9 +13,22 @@
 
 ### 1-1
 
+```python
+print('Hello World!')
+```
+
+'Hello World!' will be **printed** 
+
+`print`= 출력
+
 
 
 ### 1-2
+
+```python
+print('강한친구 대한육군')
+print('강한친구 대한육군')
+```
 
 
 
