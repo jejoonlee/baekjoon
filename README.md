@@ -9,7 +9,7 @@
 | 7월 11일 | [1-5](#1-5) |      [A-B](https://www.acmicpc.net/problem/1001)      | `진행완료` |
 | 7월 11일 | [1-6](#1-6) |     [AxB](https://www.acmicpc.net/problem/10998)      | `진행완료` |
 | 7월 11일 | [1-7](#1-7) |      [A/B](https://www.acmicpc.net/problem/1008)      | `진행완료` |
-|          |             |                                                       |            |
+| 7월 12일 | [1-8](#1-8) |   [사칙연산](https://www.acmicpc.net/problem/10869)   | `진행완료` |
 
 
 
@@ -87,5 +87,21 @@ print(int(a) * int(b))
 ```python
 a, b = input().split()
 print(int(a) / int(b))
+```
+
+
+
+### 1-8
+
+```python
+a, b = input().split()
+a = int(a)                  # int, 정수로 미리 설정을 해둔다
+b = int(b)  
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a // b)               # 몫을 구하는 것이라서 //을 사용한다
+print(a % b)
 ```
 
