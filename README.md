@@ -14,8 +14,8 @@
 | 7월 14일 | [1-10](#1-10) |         [??!](https://www.acmicpc.net/problem/10926)         | `진행완료` |
 | 7월 14일 | [1-11](#1-11) | [1998년생인 내가 태국에서는 2541년생?!](https://www.acmicpc.net/problem/18108) | `진행완료` |
 | 7월 14일 | [1-12](#1-12) |       [나머지](https://www.acmicpc.net/problem/10430)        | `진행완료` |
-| 7월 14일 | [1-13](#1-13) |         [곱셈](https://www.acmicpc.net/problem/2588)         |            |
-| 7월 14일 | [1-14](#1-14) |        [새싹](https://www.acmicpc.net/problem/25083)         |            |
+| 7월 15일 | [1-13](#1-13) | [곱셈](https://www.acmicpc.net/problem/2588) **int를 list로 바꾸는 방법** | `진행완료` |
+| 7월 15일 | [1-14](#1-14) |        [새싹](https://www.acmicpc.net/problem/25083)         | `진행완료` |
 
 
 
@@ -60,7 +60,15 @@ print(' \\(__)|')
 
 ### 1-4
 
-```pytho
+```python
+print('|\\_/|\n|q p|   /}\n( 0 )"""\\\n|"^"`    |\n||_/=\\\\__|')
+------------------------------------------------------------------
+
+print('|\\_/|')
+print('|q p|   /}')
+print('( 0 )"""\\')
+print('|"^"`    |')
+print('||_/=\\\\__|')
 ```
 
 
@@ -178,10 +186,30 @@ print(((a % c) * (b % c)) % c)			# 넷째 줄에 ((A%C) × (B%C))%C
 ### 1-13
 
 ```python
+a = int(input())
+b = int(input())
+
+c = list(map(int, str(b)))
+# int를 list로 바꾸기
+
+print(a * int(c[2]))
+print(a * int(c[1]))
+print(a * int(c[0]))
+print(a * b)
 ```
 
-
+**`list(map(int, str(...)))` : int를 list로 바꾸기!**
 
 
 
 ### 1-14
+
+```python
+print('''         ,r'"7''')
+print('''r`-_   ,'  ,/''')
+print(""" \\. ". L_r'""")
+print('   `~\\/')
+print('      |')
+print('      |')
+```
+
