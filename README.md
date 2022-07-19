@@ -16,6 +16,8 @@
 | 7월 14일 | [1-12](#1-12) |       [나머지](https://www.acmicpc.net/problem/10430)        | `진행완료` |
 | 7월 15일 | [1-13](#1-13) | [곱셈](https://www.acmicpc.net/problem/2588) **int를 list로 바꾸는 방법** | `진행완료` |
 | 7월 15일 | [1-14](#1-14) |        [새싹](https://www.acmicpc.net/problem/25083)         | `진행완료` |
+| 7월 19일 |  [2-1](#2-1)  |    [두 수 비교하기](https://www.acmicpc.net/problem/1330)    | `진행완료` |
+| 7월 19일 |  [2-2](#2-2)  |      [시험 성적](https://www.acmicpc.net/problem/9498)       | `진행완료` |
 
 
 
@@ -211,5 +213,43 @@ print(""" \\. ". L_r'""")
 print('   `~\\/')
 print('      |')
 print('      |')
+```
+
+
+
+
+
+### 2-1
+
+```python
+a, b = map(int, input().split())
+
+if a > b:
+    print('>')
+elif a == b:
+    print('==')
+else:
+    print('<')
+```
+
+`if`, `elif`, `else` 이용하기.
+
+
+
+### 2-2
+
+```python
+a = int(input())
+
+if a < 60:
+    print('F')
+elif a < 70 :
+    print('D')
+elif a < 80:
+    print('C')
+elif a < 90:
+    print('B')
+else:
+    print('A')
 ```
 
