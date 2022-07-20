@@ -18,6 +18,7 @@
 | 7월 15일 | [1-14](#1-14) |        [새싹](https://www.acmicpc.net/problem/25083)         | `진행완료` |
 | 7월 19일 |  [2-1](#2-1)  |    [두 수 비교하기](https://www.acmicpc.net/problem/1330)    | `진행완료` |
 | 7월 19일 |  [2-2](#2-2)  |      [시험 성적](https://www.acmicpc.net/problem/9498)       | `진행완료` |
+| 7월 20일 |  [2-3](#2-3)  |         [윤년](https://www.acmicpc.net/problem/2753)         | `진행완료` |
 
 
 
@@ -251,5 +252,22 @@ elif a < 90:
     print('B')
 else:
     print('A')
+```
+
+
+
+### 2-3
+
+```python
+a = int(input())
+
+if (a % 100 == 0) != (a % 400 == 0):
+    print('0')
+# a가 100의 배수이지만,
+# 400의 배수가 아닐때만 0을 출력
+elif (a % 4 == 0):
+    print('1')
+else:
+    print('0')
 ```
 
