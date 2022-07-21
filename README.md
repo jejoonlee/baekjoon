@@ -19,6 +19,7 @@
 | 7월 19일 |  [2-1](#2-1)  |    [두 수 비교하기](https://www.acmicpc.net/problem/1330)    | `진행완료` |
 | 7월 19일 |  [2-2](#2-2)  |      [시험 성적](https://www.acmicpc.net/problem/9498)       | `진행완료` |
 | 7월 20일 |  [2-3](#2-3)  |         [윤년](https://www.acmicpc.net/problem/2753)         | `진행완료` |
+| 7월 21일 |  [2-4](#2-4)  |    [사분면 고르기](https://www.acmicpc.net/problem/14681)    | `진행완료` |
 
 
 
@@ -269,5 +270,25 @@ elif (a % 4 == 0):
     print('1')
 else:
     print('0')
+```
+
+
+
+
+
+### 2-4
+
+```python
+x = int(input())
+y = int(input())
+
+if x > 0 and y > 0:
+    print('1')
+elif x < 0 and y > 0:
+    print('2')
+elif x < 0 and y < 0:
+    print('3')
+elif x > 0 and y < 0:
+    print('4')
 ```
 
