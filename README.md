@@ -16,13 +16,13 @@
 | 7월 14일 | [1-12](#1-12) |       [나머지](https://www.acmicpc.net/problem/10430)        | `진행완료` |
 | 7월 15일 | [1-13](#1-13) | [곱셈](https://www.acmicpc.net/problem/2588) **int를 list로 바꾸는 방법** | `진행완료` |
 | 7월 15일 | [1-14](#1-14) |        [새싹](https://www.acmicpc.net/problem/25083)         | `진행완료` |
-| 7월 19일 |  [2-1](#2-1)  |    [두 수 비교하기](https://www.acmicpc.net/problem/1330)    | `진행완료` |
-| 7월 19일 |  [2-2](#2-2)  |      [시험 성적](https://www.acmicpc.net/problem/9498)       | `진행완료` |
-| 7월 20일 |  [2-3](#2-3)  |         [윤년](https://www.acmicpc.net/problem/2753)         | `진행완료` |
-| 7월 21일 |  [2-4](#2-4)  |    [사분면 고르기](https://www.acmicpc.net/problem/14681)    | `진행완료` |
-| 7월 22일 |  [2-5](#2-5)  |      [알람 시계](https://www.acmicpc.net/problem/2884)       | `진행완료` |
-| 7월 22일 |  [2-6](#2-6)  |      [오븐 시계](https://www.acmicpc.net/problem/2525)       | `진행완료` |
-|          |               |                                                              |            |
+| 7월 19일 |  [2-1](#2-1)  | [두 수 비교하기](https://www.acmicpc.net/problem/1330) - 조건문 | `진행완료` |
+| 7월 19일 |  [2-2](#2-2)  |  [시험 성적](https://www.acmicpc.net/problem/9498) - 조건문  | `진행완료` |
+| 7월 20일 |  [2-3](#2-3)  |    [윤년 ](https://www.acmicpc.net/problem/2753)- 조건문     | `진행완료` |
+| 7월 21일 |  [2-4](#2-4)  | [사분면 고르기 ](https://www.acmicpc.net/problem/14681)- 조건문 | `진행완료` |
+| 7월 22일 |  [2-5](#2-5)  |  [알람 시계](https://www.acmicpc.net/problem/2884) - 조건문  | `진행완료` |
+| 7월 22일 |  [2-6](#2-6)  |  [오븐 시계 ](https://www.acmicpc.net/problem/2525)- 조건문  | `진행완료` |
+| 7월 22일 |  [2-7](#2-7)  | [주사위 세개](https://www.acmicpc.net/problem/2480) - 조건문 | `진행완료` |
 
 
 
@@ -357,6 +357,24 @@ else:
 
 
 [위로가기](#-백준)
+
+### 2-7
+
+```python
+a, b, c = map(int, input().split())
+
+
+if a == b == c:
+    print(10000 + a * 1000)
+elif a == b:
+    print(1000 + 100 * a)
+elif a == c:
+    print(1000 + 100 * a)
+elif b == c:
+    print(1000 + 100 * b)
+elif not (a == b == c):
+    print(max(a, b, c) * 100)
+```
 
 
 
