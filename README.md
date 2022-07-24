@@ -22,7 +22,8 @@
 | 7월 21일 |  [2-4](#2-4)  | [사분면 고르기 ](https://www.acmicpc.net/problem/14681)- 조건문 | `진행완료` |
 | 7월 22일 |  [2-5](#2-5)  |  [알람 시계](https://www.acmicpc.net/problem/2884) - 조건문  | `진행완료` |
 | 7월 22일 |  [2-6](#2-6)  |  [오븐 시계 ](https://www.acmicpc.net/problem/2525)- 조건문  | `진행완료` |
-| 7월 22일 |  [2-7](#2-7)  | [주사위 세개](https://www.acmicpc.net/problem/2480) - 조건문 | `진행완료` |
+| 7월 23일 |  [2-7](#2-7)  | [주사위 세개](https://www.acmicpc.net/problem/2480) - 조건문 | `진행완료` |
+| 7월 24일 |  [3-1](#3-1)  |        [구구단](https://www.acmicpc.net/problem/2739)        |            |
 
 
 
@@ -377,4 +378,22 @@ elif not (a == b == c):
 ```
 
 
+
+[위로가기](#-백준)
+
+### 3-1
+
+```python
+a = int(input())
+
+for i in range(1, 10):
+    ans = a * i
+    print(f'{a} * {i} =', ans)
+```
+
+**구구단**
+
+- `a`에 숫자를 입력하고
+- `ans` 는 `a`와 `i`의 곱셈이다
+- `i`는 1부터 9까지의 숫자이당
 
