@@ -23,7 +23,7 @@
 | 7월 22일 |  [2-5](#2-5)  |  [알람 시계](https://www.acmicpc.net/problem/2884) - 조건문  | `진행완료` |
 | 7월 22일 |  [2-6](#2-6)  |  [오븐 시계 ](https://www.acmicpc.net/problem/2525)- 조건문  | `진행완료` |
 | 7월 23일 |  [2-7](#2-7)  | [주사위 세개](https://www.acmicpc.net/problem/2480) - 조건문 | `진행완료` |
-| 7월 24일 |  [3-1](#3-1)  |        [구구단](https://www.acmicpc.net/problem/2739)        |            |
+| 7월 24일 |  [3-1](#3-1)  |        [구구단](https://www.acmicpc.net/problem/2739)        | `진행완료` |
 
 
 
