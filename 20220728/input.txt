@@ -1,0 +1,1 @@
+python 1.Bronze_2_5622_다이얼.py
