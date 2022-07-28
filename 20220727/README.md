@@ -186,15 +186,77 @@ print(cnt)
  print(ans)
  ```
 
-##### 
+```python
+import sys
+
+sys.stdin = open('input.txt', 'r')
+
+# 키와 몸무게가 모두 커야 덩치가 더 큰 것
+# 자신보다 더 덩치가 큰 사람들이 있으면 k + 1
+
+N = int(input())
+# 사람 수
+
+lst = []
+for i in range(N):
+    x, y = map(int, input().split())
+    #키와 몸무게
+    lst.append((x, y))
+    #[(55, 185), (58, 183), (88, 186), (60, 175), (46, 155)]
+
+rank = 1
+rank_list = [0] * N
+
+# 모든 사람들을 비교하기 위한 이중 반복문
+for a in range(N):
+# N명 중 각자의 키와 몸무게를 가지고 온다
+    A = lst[a] # 기준이 되는 사람
+    for b in range(N):
+    # N명 안에 각자의 키와 몸무게를 또 가지고 온다
+    # 비교를 하기 위해
+        B = lst[b] # 비교하는 사람
+        if A[0] > B[0] and A[1] > B[1]:
+        # 각자의 키는 키끼리, 몸무게는 몸무게끼리 비교한다
+        # B보다 덩치가 큰 사람이 1명이 더 있다
+            rank_list[b] += 1
+
+
+print(rank_list)
+for rank in rank_list:
+    print(rank + 1, end = ' ')
+```
 
 
 
 ## 덩치
 
-
-
 ```python
+N = int(input())
 
+lst = []
+for i in range(1, N + 1):
+    x, y = map(int, input().split())
+    lst.append((x, y))
+    # 키 x 와 몸무게 y를 리스트 안에 넣는다
+    # [(55, 185), (58, 183), (88, 186), (60, 175), (46, 155)]
+
+rank = [] * N
+    
+for a in lst:
+# 리스트 안에 있는 값을 비교하기 위한 `기준점`
+    A = lst[a]
+	for b in lst:
+    # 리스트 안에 있는 값을 비교하기 위한 비교 숫자
+    	B = lst[b]
+            if A[0] > B[0] and A[1] > B[1]:
+			# 키와 몸무게가 모두 B가 작으면
+            	rank[b] += 1
+                # rank의 b 인덱스에 1을 더하기
+                # 덩치가 큰 사람이 나보다 몇명 더 있는지 찾는 것
+                
+for result in rank:
+    print(result + 1, end = ' ')
+    # 마지막에 1씩 더해준다. 1부터 시작임
+    # 즉 값이 1이면, 해당 사람보다 덩치가 큰 사람이 없는 것
 ```
 
