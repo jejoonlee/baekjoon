@@ -9,5 +9,5 @@
 | 2022.07.26              | Bronze 3 ~ 1        | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220726) |
 | 2022.07.27              | Bronze 1 ~ Silver 5 | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220727) |
 | 2022.07.28              | Bronze 4 ~ 1        | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220728) |
-
+| 2022.07.29              | Bronze 2            | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220729) |
 
