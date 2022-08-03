@@ -1,7 +1,7 @@
 from pprint import pprint
 
-import sys
-sys.stdin = open('input.txt', 'r')
+# import sys
+# sys.stdin = open('input.txt', 'r')
 
 
 # G = int(input())

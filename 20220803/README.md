@@ -6,6 +6,8 @@
 
 [5533 유니크](#5533-유니크)
 
+[2167 2차원 배열의 합](#2167-2차원-배열의-합)
+
 
 
 
@@ -135,3 +137,25 @@ for i in t_score:
 - `for j in range(3)`에서 `.count`를 써서 해당 점수 `scores[j][i]`가 `scores[j]` 기준  1만 존재하면, score에 점수를 더해준다
 
 ![유니크설명](README.assets/유니크설명.png)
+
+
+
+### 2167 2차원 배열의 합
+
+```python
+N, M = map(int, input().split())
+
+matrix = [list(map(int, input().split())) for _ in range(2)]
+
+r_num = int(input())
+
+for r in range(r_num):
+    i, j, x, y = map(int, input().split())
+    result = 0
+    for a in range(i - 1, x):
+        for b in range(j - 1, y):
+            result += matrix[a][b]
+    print(result)
+```
+
+![2차원_배열의_합](README.assets/2차원_배열의_합.png)
