@@ -116,15 +116,13 @@ for g in range(G):
     scores[2].append(c)
 
 for i in range(G):
+# 'i'가 기준
     score = 0
     for j in range(3):
         if scores[j].count(scores[j][i]) == 1:
-        # .count를 써서 scores[j]에 점수가 하나만 존재하면
             score += scores[j][i]
-            # 그 점수를 더해준다
-            # 여기서 score은 'i' 기준이다
     t_score.append(score)
-    # 더한 숫자를 t_score에 넣어준다
+
 
 for i in t_score:
     print(i)
@@ -135,3 +133,5 @@ for i in t_score:
 - `for i in range(G)` 는 기준점이다.
   - 즉 `for j in range(3)` 에서 반복하는 점수들을 0으로 만들고, `i` 기준으로 점수들을 더해준다
 - `for j in range(3)`에서 `.count`를 써서 해당 점수 `scores[j][i]`가 `scores[j]` 기준  1만 존재하면, score에 점수를 더해준다
+
+![유니크설명](README.assets/유니크설명.png)
