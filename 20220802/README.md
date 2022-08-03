@@ -1,21 +1,16 @@
 # ✍️ 문제풀이
 
-[후기](#후기)
-
 [1269 대칭 차집합](#1269_대칭_차집합)
 
 [11286 절대값 힙](#11286-절대값-힙)
+
+[25192 인사성 밝은 곰곰이](#25192-인사성-밝은-곰곰이)
 
 [81301 숫자 문자열과 영단어](#81301-숫자-문자열과-영단어)
 
 
 
 
-
-## 후기
-
->
->
 
 
 
@@ -81,6 +76,50 @@ for n in num:
   - 그러면 `heap`이 1순위로 절대값 기준으로 정렬을 한 후
   - 2순위로 n의 값 기준으로 정렬해준다
 - 그리고 출력할 때에는 `heapq.heappop(heap)[1]` 튜플의 1번 인덱스의 값을 가지고 온다
+
+### heap은 항상 가장 작은 요소가 heap[0]에 있다 
+
+
+
+### 25192 인사성 밝은 곰곰이
+
+```python
+# 내 풀이
+
+N = int(input())
+
+lst = []
+for n in range(N):
+    chat = input()
+    lst.append(chat)
+
+gomgom = set()
+leng = []
+
+for c in lst:
+    if c != 'ENTER':
+        gomgom.add(c)
+    elif c == 'ENTER':
+        leng.append(len(gomgom))
+        gomgom.clear()
+
+leng.append(len(gomgom))
+print(sum(leng))
+----------------------------------------------------------
+
+gom = 0
+
+for c in lst:
+    if c == 'Enter':
+        gomgom.clear()
+    else:
+        if c not in gomgom:
+            gomgom.add(c)
+            gom += 1
+            # 1씩 더하기
+
+print(gom)
+```
 
 
 
