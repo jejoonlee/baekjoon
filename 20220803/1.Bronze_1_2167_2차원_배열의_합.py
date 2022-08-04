@@ -3,7 +3,7 @@ input=sys.stdin.readline
 
 N, M = map(int, input().split())
 
-matrix = [list(map(int, input().split())) for _ in range(2)]
+matrix = [list(map(int, input().split())) for i in range(N)]
 
 r_num = int(input())
 
@@ -14,5 +14,3 @@ for r in range(r_num):
         for b in range(j - 1, y):
             result += matrix[a][b]
     print(result)
-
-    

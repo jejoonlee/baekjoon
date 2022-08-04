@@ -34,6 +34,8 @@ for t in range(T):
     matrix[0].append(a)
     matrix[1].append(b)
     matrix[2].append(c)
+    # 원래 문제에서 주어졌던 입력값들은 위에서 아래로 보는 것
+    # 쉽게 보기 위에서, 좌에서 우로 볼 수 있는 행렬을 만들기
 
 pprint(matrix)
 # [[100, 100, 63, 99, 89], 
