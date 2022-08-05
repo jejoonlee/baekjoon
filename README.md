@@ -11,5 +11,11 @@
 | 2022.07.28              | Bronze 4 ~ 1        | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220728) |
 | 2022.07.29              | Bronze 2            | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220729) |
 | 2022.07.30              | Bronze 1, Silver 5  | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220730) |
-| 2022.07.31              |                     |            | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220731) |
+| 2022.07.31              | Bronze, Silver      | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220731) |
+| 2022.08.01              | 스택, 큐            | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220801) |
+| 2022.08.02              | 힙                  | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220802) |
+| 2022.08.03              | 행열                | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220803) |
+| 2022.08.04              | 행열                | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220804) |
+| 2022.08.05              | 반복문              | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220805) |
+| 2022.08.06              | 1차원 배열          | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220806) |
 
