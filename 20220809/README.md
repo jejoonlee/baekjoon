@@ -6,7 +6,7 @@
 
 [1526 가장 큰 금민수](#1526-가장-큰-금민수)
 
-
+[2897 몬스터 트럭](#2897-몬스터-트럭)
 
 
 
@@ -17,9 +17,10 @@
 ### 1371 가장 많은 글자
 
 ```python
-al = {}
-
 code = [0] * 26
+
+# try : 정상적으로 실행될 때 (오류가 없을 때)
+# except: 오류가 발생할 때 실행되는 코드 블럭
 
 while True:
     try:
@@ -44,23 +45,13 @@ while True:
         break
 
 result = ''.join(final)
-print(result)N, M = map(int, input().split())
+print(result)
+---------------------------------------------------------------------
 
-cards = list(map(int, input().split()))
-
-max_num = 0
-for i in range(N - 2):
-    for j in range(i + 1, N - 1):
-        for k in range(j + 1, N):
-            # 3중문으로 한번씩 더해준다
-            num = cards[i] + cards[j] + cards[k]
-
-            # M보다 작을 경우는 계속 위의 공식을 진행한다
-            if max_num < num <= M:
-                # num이 max_num보다 크면 max_num은 num의 값이 된다
-                max_num = num
-
-print(max_num)
+# x는 dict_.items()에 의해 만들어진 각 튜플
+# x[0] 는 각 튜플의 인덱스
+# -x[1] 튜플의 1번째 인덱스를 내림차순으로 정렬
+# sorted_dict = sorted(dict_.items(), key = lambda x: (-x[1], x[0]))
 ```
 
 
@@ -128,3 +119,60 @@ while True:
         break
 ```
 
+
+
+### 2897 몬스터 트럭
+
+```python
+R, C = map(int, input().split())
+
+parking = [list(input()) for _ in range(R)]
+
+dr = [1, 1, 0]
+dc = [0, 1, 1]
+
+destroy = [0, 0, 0, 0, 0]
+empty = '.'
+car = 'X'
+building = '#'
+
+for x in range(R):
+    for y in range(C):
+        flag = True
+        cnt = 0
+
+        # 만약 해당 좌표에 건물이 있으면 아무것도 할 수 없다
+        if parking[x][y] == building:
+            continue
+
+        if parking[x][y] == car:
+            cnt += 1
+            
+            # 델타 탐색
+        for i in range(3):
+            sr = dr[i] + x
+            sc = dc[i] + y
+
+            if 0 <= sr < R and 0 <= sc < C:
+
+                if parking[sr][sc] == building:
+                    flag = False
+                    break
+
+                elif parking[sr][sc] == car:
+                    cnt += 1
+            
+            else:
+                flag = False
+                # 2 X 2 라서, 끝 부분에 들어가면,
+                # flag를 false로 변환되어,
+                # 좌표로 들어간다
+            
+        if flag == True:
+            destroy[cnt] += 1
+
+for i in destroy:
+    print(i)
+```
+
+- `Flag` 를 이용해서 참과 거짓에 따라서, 값을 저장을 하고 안 하는 것 
