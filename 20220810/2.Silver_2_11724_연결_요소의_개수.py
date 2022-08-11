@@ -40,7 +40,7 @@ for i in range(len(visited)):
             # adj에 있는 current번째의 값을 가지고 온다
             for c in adj[current]:
                 # 숫자에 방문을 안 한 상태면
-                if visited[c] == False:
+                if not visited[c]:
                     # True로 바꿔주고
                     visited[c] = True
                     # 스택에 넣는다
