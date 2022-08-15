@@ -22,5 +22,7 @@
 | 2022.08.08              | 완전 탐색 (brute force, delta search) | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220808) |
 | 2022.08.09              | 그래프 (Graph)                        | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220809) |
 | 2022.08.10              | 깊이 우선 탐색 (DFS)                  | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220810) |
-| 2022.08.11              | 단순 구현                             |            | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220811) |
+| 2022.08.11              | 단순 구현                             | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220811) |
+| 2022.08.13~14           | DFS, Delta Search (오목, 촌수 계산)   | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220813_14) |
+| 2022.08.15              | DFS와 Delta Search (미로 탐색, 그림)  | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220815) |
 
