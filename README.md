@@ -25,4 +25,5 @@
 | 2022.08.11              | 단순 구현                             | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220811) |
 | 2022.08.13~14           | DFS, Delta Search (오목, 촌수 계산)   | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220813_14) |
 | 2022.08.15              | DFS와 Delta Search (미로 탐색, 그림)  | `진행완료` | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220815) |
+| 2022.08.16 ~ 21         | 부르트 포스 / 정렬                    |            | [Click](https://github.com/jejoonlee/baekjoon/tree/master/20220816_21) |
 
