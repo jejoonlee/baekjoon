@@ -26,34 +26,26 @@ sys.stdin = open('input.txt')
 
 # print(result)
 
-input = sys.stdin.readline
+# 위에서는 회의 시작하는 시간 기준으로만 정렬을 했다
+# 회의를 시작하는 시간 기준으로 정렬을 한 후, 끝나는 시간의 기준으로도 다시 정렬을 해야 한다
 
+# 즉 회의가 빨리 끝나는 순서대로 정렬을 해야 한다. 회의가 빨리 시작하는 순서대로 정렬을 하면 안 된다
 N = int(input())
+time = []
 
-meeting = []
 for n in range(N):
-  a, b = map(int, input().split())
-  meeting.append((a,b))
+  start, end = map(int, input().split())
+  time.append((start, end))
 
-meeting.sort()
+time.sort(key = lambda x: x[0])
+time.sort(key = lambda x: x[1])
 
-result = 0
-for m in range(N - 1):
+end = 0
+cnt = 0
 
-  cnt = 1
-  n = m + 1
+for s, e in time:
+  if s >= end :
+    end = e
+    cnt += 1
 
-  while n != N:
-    
-    if meeting[m][1] <= meeting[n][0]:
-      m = n
-      n = m + 1
-      cnt += 1
-    
-    else:
-      n += 1
-  
-  if result < cnt:
-    result = cnt
-
-print(result)
+print(cnt)
