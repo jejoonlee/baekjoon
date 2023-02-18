@@ -5,14 +5,17 @@ N = int(input())
 array = list(map(int, input().split()))
 swap = int(input())
 
-while swap != 0:
-    for i in range(1, N):
-        if array[i-1] < array[i]:
-            temp = array[i]
-            array[i] = array[i-1]
-            array[i-1] = temp
-            break
+for i in range(N):
+    max_num = max(array[i : i + swap + 1])
+    max_num_index = array.index(max_num)
 
-    swap -= 1
+    for j in range(max_num_index, i, -1):
+        array[j - 1], array[j] = array[j], array[j - 1]
+
+    swap -= max_num_index - i
+
+    if swap <= 0:
+        break
+
 
 print(' '.join(map(str, array)))
