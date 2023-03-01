@@ -17,11 +17,11 @@ def count_cd(time):
     
     return count + 1
 
+
 lectures = list(map(int, input().split()))
 
 left = max(lectures)
 right = sum(lectures)
-
 
 while left <= right:
     
