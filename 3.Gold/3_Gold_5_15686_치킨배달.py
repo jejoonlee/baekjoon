@@ -22,6 +22,9 @@ for i in range(N):
 
 for alive in combinations(chicken, M):
     distance = 0
+    print(alive)
+    print(home)
+
     for h in home:
         min_distance = N * N
     

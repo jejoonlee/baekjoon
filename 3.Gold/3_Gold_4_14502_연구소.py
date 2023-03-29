@@ -2,7 +2,7 @@ import sys
 sys.stdin = open('input.txt')
 
 from collections import deque
-from itertools import combinations
+from itertools import combinations, permutations
 from copy import deepcopy
 
 N, M = map(int, input().split())
