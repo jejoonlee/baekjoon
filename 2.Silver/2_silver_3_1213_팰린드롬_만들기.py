@@ -8,7 +8,7 @@ alp = input()
 
 for a in alp:
     if a in al_dict:
-        al_dict[a] += 1
+        al_dict[a] += 1 
     else:
         al_dict[a] = 1
 
