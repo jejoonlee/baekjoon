@@ -3,73 +3,35 @@ sys.stdin = open('input.txt')
 
 N = int(input())
 
-board = [[0] * N for _ in range(N)]
+board = [0] * N
+result = 0
 
-count = 0
-
-
-
-def is_possible(row, column, attack):
-
-    dr, dc = [-1, -1, -1, 0, 0, 1, 1, 1], [-1, 0, 1, -1, 1, -1, 0, 1]
-
-    board[row][column] = attack
-
-    for i in range(8):
-        sr, sc = row + dr[i], column + dc[i]
-
-        if 0 <= sr < N and 0 <= sc < N:
-
-            if attack == 'X':
-                if board[sr][sc] != 0:
-                    break
-
-                else:
-                    while 0 <= sr < N and 0 <= sc < N:
-                        board[sr][sc] = attack
-                        sr, sc = sr + dr[i], sc + dc[i]
-
-            if attack == 0:
-                if board[sr][sc] == 0:
-                    break
-
-                else:
-                    while 0 <= sr < N and 0 <= sc < N:
-                        board[sr][sc] = attack
-                        sr, sc = sr + dr[i], sc + dc[i]
-
-
-cnt = 0
-
-def search(row, column, queens):
-
+def is_possible(c):
     
+    for column in range(c):
+        if board[c] == board[column] or abs(c - column) == abs(board[c] - board[column]):
+            return False
+    
+    return True
 
-    if queens == N:
 
-        global cnt
+def backtracking(start):
 
-        cnt += 1
-        return
+    global result
 
-    if row == N:
+    if start == N:
+        result += 1
+        print(board)
         return
     
-    if column == N:
-        search(row + 1, 0, queens)
-        return
-    
-    if board[row][column] != 0:
-        search(row, column + 1, queens)
-        return
+    for column in range(N):
 
-    is_possible(row, column, 'X')
-    search(row, column + 1, queens + 1)
-    is_possible(row, column, 0)
-            
+        board[start] = column
 
-for i in range(N):
-    for j in range(N):
-        search(i, j, 1)
+        if is_possible(start):
+            backtracking(start + 1)    
 
-print(cnt)
+
+backtracking(0)
+
+print(result)
